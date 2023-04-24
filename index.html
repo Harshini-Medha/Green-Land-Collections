@@ -1,35 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  <section class="w-full h-screen flex justify-center flex-col items-center bg-green-600 bg-[url('./bg-3.jpg')]">
-    <h2 class=" text-[45px] text-green-700 font-bold ">Green Land Collections</h2>
-    <br><br>
-    <form onsubmit="Login(event)" class="w-[30%] h-[60%] text-[17px] flex flex-col rounded-lg shadow-lg shadow-green-800  bg-white justify-evenly text-center items-center">
-   
-      <span class="text-green-700 font-bold">User Name 
-        <input class="outline-none  border-b-2 border-b-green-700" id="User" type="text" placeholder="Enter Your User Name"> 
-      </span>
-      <span class="text-green-700 font-bold">email
-        <input class="outline-none  border-b-2 border-b-green-700" id="mail" type="email" placeholder="Enter Valid email id"> 
-      </span>
-      <span class="text-green-700 font-bold">Password
-        <input class="outline-none  border-b-2 border-b-green-700" id="pass" type="password" placeholder="Enter Password"> </span>
-<button onclick="Verifypas()" id="eye"><i class="fa-solid fa-eye"></i></button>
-      
-      <button class="w-[100px] h-[40px] rounded-full bg-green-700 text-white font-bold  ">Login</button>
-    </form>
-   
-  </section>
-<script src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+      integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+      integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section
+      class="w-full h-screen flex justify-center flex-col items-center bg-green-600 bg-[url('./bg-3.jpg')] bg-center bg-cover bg-no-repeat"
+    >
+      <h2 class="text-[45px] text-green-700 font-bold">
+        Green Land Collections
+      </h2>
+      <br /><br />
+      <form
+        onsubmit="Login(event)"
+        class="w-[30%] h-[60%] text-[17px] flex flex-col rounded-lg shadow-lg shadow-green-800 bg-white justify-evenly text-center items-center"
+      >
+        <span class="text-green-700 font-bold"
+          >User Name
+          <input
+            class="outline-none border-b-2 border-b-green-700"
+            id="User"
+            type="text"
+            placeholder="Enter Your User Name"
+          />
+        </span>
+        <span class="text-green-700 font-bold"
+          >email
+          <input
+            class="outline-none border-b-2 border-b-green-700"
+            id="mail"
+            type="email"
+            placeholder="Enter Valid email id"
+          />
+        </span>
+        <span class="text-green-700 font-bold"
+          >Password
+          <input
+            class="outline-none border-b-2 border-b-green-700"
+            id="pass"
+            type="password"
+            placeholder="Enter Password"
+          />
+          <span onclick="Verifypas()" id="eye" class="cursor-pointer">
+            <i class="fa-solid fa-eye"></i>
+          </span>
+        </span>
 
-</body>
+        <button
+          type="submit"
+          class="w-[100px] h-[40px] rounded-full bg-green-700 text-white font-bold"
+        >
+          Login
+        </button>
+      </form>
+    </section>
+    <script src="index.js"></script>
+  </body>
 </html>
